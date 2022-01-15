@@ -1,0 +1,78 @@
+.movie-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.movie {
+  background-color: #373b69;
+  margin: 1rem;
+  width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 7px 4px 3px 5px rgb(0 0 0 / 20%);
+}
+.movie img {
+  object-fit: cover;
+
+  max-width: 100%;
+}
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movie-info h3 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 1rem;
+  font-size: 0.8rem;
+  height: 5rem;
+}
+.movie-info span {
+  padding-right: 1rem;
+}
+
+.movie-over {
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #22254b;
+  position: absolute;
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  text-align: justify;
+  right: 0;
+  overflow: auto;
+  max-height: 60%;
+  transform: translateY(100%);
+  transition: all 0.25s ease-in-out;
+  background-color: #bcb8b1;
+}
+.movie-over h2 {
+  color: green;
+  background-color: black;
+  border-radius: 20px;
+  text-align: center;
+}
+.movie:hover .movie-over {
+  transform: translateY(0);
+}
+.tag {
+  background-color: #22254b;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.tag.green {
+  color: green;
+}
+.tag.orange {
+  color: orange;
+}
+.tag.red {
+  color: red;
+}

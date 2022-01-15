@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  position: relative;
+}
+.search {
+  border: 3px solid #32e17c;
+  height: 40px;
+  width: 300px;
+  border-radius: 50px;
+  padding: 10px 10px;
+  outline: none;
+  opacity: 80%;
+}
+.search:hover {
+  opacity: 100%;
+}
+
+.movie-icon {
+  z-index: 2;
+  position: absolute;
+  left: 20px;
+  top: 12px;
+}
+header h2 {
+  z-index: 2;
+  position: absolute;
+  color: #32e17c;
+  left: 50px;
+  top: -20px;
+}
+.search-icon {
+  position: relative;
+  color: black;
+  z-index: 2;
+  right: 25px;
+  bottom: -5px;
+}
